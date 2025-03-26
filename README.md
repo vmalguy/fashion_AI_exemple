@@ -43,6 +43,10 @@ pip install "numpy<2"
 - `fashion_mnist_app.py` - A standalone app that demonstrates model usage with random data
 - `predict_from_image.py` - Tool to predict fashion classes from custom images
 - `use_model.py` - Simple example showing how to load and use the model
+- `examples/` - Directory containing sample images for testing the model
+  - `shirt.jpg` - Sample shirt image
+  - `dress.jpg` - Sample dress image
+  - `Ankle boot.jpg` - Sample ankle boot image
 
 ## Usage
 
@@ -69,6 +73,19 @@ This will:
 2. Run the model to classify the clothing item
 3. Show prediction probabilities for all classes
 4. Save visualizations of the processed image and results
+
+### Example Images
+
+The repository includes sample images in the `examples/` directory that you can use to test the model:
+
+```bash
+# Try the example images
+python predict_from_image.py examples/shirt.jpg
+python predict_from_image.py examples/dress.jpg
+python predict_from_image.py examples/Ankle\ boot.jpg
+```
+
+These examples are real-world images that demonstrate how the model handles different clothing items.
 
 #### Image Requirements
 - Images should be grayscale or will be converted to grayscale
